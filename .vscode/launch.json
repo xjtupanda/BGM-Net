@@ -1,0 +1,74 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: method/train.py --collection tvr --visual_feature i3d_resnet --root_path ./data/netdisk --dset_name tvr --exp_id debug --q_feat_size 768 --margin 0.1 --device_ids 3",
+            "type": "python",
+            "request": "launch",
+            "program": "method/train.py",
+            "env": {},
+            "console": "integratedTerminal",
+            "args": [
+                "--collection",
+                "tvr",
+                "--visual_feature",
+                "i3d_resnet",
+                "--root_path",
+                "./data/netdisk",
+                "--dset_name",
+                "tvr",
+                "--exp_id",
+                "debug",
+                "--q_feat_size",
+                "768",
+                "--margin",
+                "0.1",
+                "--device_ids",
+                "3"
+            ],
+            "cwd": "/data/xjtupanda/experiments/MM/expCode"
+        },
+        {
+            "name": "Python: method/eval.py --collection tvr --visual_feature i3d_resnet --root_path ./data/netdisk --dset_name tvr --model_dir tvr-debug-2023_02_23_09_44_12",
+            "type": "python",
+            "request": "launch",
+            "program": "method/eval.py",
+            "env": {},
+            "console": "integratedTerminal",
+            "args": [
+                "--collection",
+                "tvr",
+                "--visual_feature",
+                "i3d_resnet",
+                "--root_path",
+                "./data/netdisk",
+                "--dset_name",
+                "tvr",
+                "--model_dir",
+                "tvr-debug-2023_02_23_09_44_12"
+            ],
+            "cwd": "/data/xjtupanda/experiments/MM/expCode"
+        },
+        {
+            "name": "Python: method/eval.py --collection tvr --visual_feature i3d_resnet --root_path ./data/netdisk --dset_name tvr --model_dir tvr-debug-2023_02_23_09_44_12",
+            "type": "python",
+            "request": "launch",
+            "program": "method/eval.py",
+            "env": {},
+            "console": "integratedTerminal",
+            "args": [
+                "--collection",
+                "tvr",
+                "--visual_feature",
+                "i3d_resnet",
+                "--root_path",
+                "./data/netdisk",
+                "--dset_name",
+                "tvr",
+                "--model_dir",
+                "tvr-debug-2023_02_23_09_44_12"
+            ],
+            "cwd": "/data/xjtupanda/experiments/MM/expCode"
+        }
+    ]
+}
