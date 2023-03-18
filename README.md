@@ -43,26 +43,33 @@ $ pip install -r requirements.txt
 3. Download features
 
 The features provided by [ms-sl](https://github.com/HuiGuanLab/ms-sl) can be downloaded from [Baidu pan](https://pan.baidu.com/s/1UNu67hXCbA6ZRnFVPVyJOA?pwd=8bh4).
-Refer to [here](https://github.com/HuiGuanLab/ms-sl/tree/main/dataset) for detailed descriptions of the datasets.
-
+Refer to [here](https://github.com/HuiGuanLab/ms-sl/tree/main/dataset) for detailed description of the datasets.
+Extract the feature file to the `ROOTPATH` specified by yourself. This directory is used for storing datasets, logs, checkpoints and so on:
+```shell
+tar -xvf {DATASET_NAME}.tar -C ROOTPATH
+```
 4. Training and Inference
 
-Set `SUB_LIST`, 
-`OUTPUT` (dir for saving ckpts, log and results)
-and `DATASET` ( ["samm" | "cas(me)^2"] )  in [pipeline.sh](https://github.com/xjtupanda/AUW-GCN/blob/main/pipeline.sh), then run:
+Simply run scripts `do_tvr.sh`, `do_activitynet.sh`, `do_charades.sh` for training and evaluation on TVR, Activitynet and Charades-STA, respectively. For example:
 ```shell
-$ bash pipeline.sh
+$ bash do_tvr.sh
 ```
+for training and evaluation on TVR dataset.
+Set `device_ids` in the script to assign which GPU to use.
+`bsz` and `lr` are batch-size and learning rate, respectively.
+Check `method/config.py` for all more description of parameters.
+The best checkpoint and the log should be saved in `ROOTPATH/DATASET_NAME/results`.
 
-**We also provide ckpts, logs, etc.** to reproduce the results in the paper, please download [ckpt.tar.gz](https://pan.baidu.com/s/1U-LEYH_fGOwgeToJ2Abhlw?pwd=5kan).
-## Citation
-If you feel this project helpful to your research, please cite our work. (To be updated when published on ICME.)
+***
+To reproduce the results using ckpts, please download ... (To be uploaded).
+
+Extract and put the model file in the right place, set `MODEL_DIR` in `do_test.sh` and run:
 ```
-@inproceedings{Yin2023AUawareGC,
-  title={AU-aware graph convolutional network for Macro- and Micro-expression spotting},
-  author={Shukang Yin and Shiwei Wu and Tong Xu and Shifeng Liu and Sirui Zhao and Enhong Chen},
-  year={2023}
-}
+$ bash do_test.sh
+```
+## Citation
+If you feel this project helpful to your research, please cite our work. (To be updated when published on ACM MM.)
+```
 ```
 
 ##### Please email me at xjtupanda@mail.ustc.edu.cn if you have any inquiries or issues.
