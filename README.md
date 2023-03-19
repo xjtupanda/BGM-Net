@@ -61,7 +61,7 @@ Check `method/config.py` for all more description of parameters.
 The best checkpoint and the log should be saved in `ROOTPATH/DATASET_NAME/results`.
 
 ***
-To reproduce the results using ckpts, please download ... (To be uploaded).
+To reproduce the results using pre-trained checkpoints, please download ... (To be uploaded).
 
 Extract and put the model file in the right place, set `MODEL_DIR` in `do_test.sh` and run:
 ```
