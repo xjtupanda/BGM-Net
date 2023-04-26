@@ -1,5 +1,5 @@
 # BGM-Net
-PyTorch implementation for the paper "Bipartite Graph Matching Network for Partially Relevant Video Retrieval): [ACM MM version (Coming soon)](),  [arXiv version]().
+PyTorch implementation for the paper "Bipartite Graph Matching Network for Partially Relevant Video Retrieval".
 
 > The code is modified from [ms-sl
 ](https://github.com/HuiGuanLab/ms-sl).
@@ -27,10 +27,6 @@ GPU: NVIDIA GeForce RTX 3090 Ti
 
 ## Getting started
 1. Clone this repository
-```shell
-$ git clone git@github.com:xjtupanda/BGM-Net.git
-$ cd BGM-Net
-```
 
 2. Prepare environment
 
@@ -67,9 +63,4 @@ Extract and put the model file in the right place, set `MODEL_DIR` in `do_test.s
 ```
 $ bash do_test.sh
 ```
-## Citation
-If you feel this project helpful to your research, please cite our work. (To be updated when published on ACM MM.)
-```
-```
 
-##### Please email me at xjtupanda@mail.ustc.edu.cn if you have any inquiries or issues.
