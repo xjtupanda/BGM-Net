@@ -1,11 +1,11 @@
 collection=charades
 visual_feature=i3d_rgb_lgi
-clip_scale_w=0.5
-frame_scale_w=0.5
+clip_scale_w=0.6
+frame_scale_w=0.4
 exp_id=debug
 root_path=./data/netdisk
-device_ids=5
-use_matcher_start_epoch=75
+device_ids=7
+use_matcher_start_epoch=50
 map_size=32
 # training
 

@@ -1,6 +1,8 @@
 # misc
 data/
 tmp_bak/
+method/
+utils/
 *__pycache__*
 
 # Byte-compiled / optimized / DLL files
