@@ -42,10 +42,6 @@ class HungarianMatcher(nn.Module):
         """
         num_captions, bs, num_moments = outputs.shape
         
-        # We flatten to compute the cost matrices in a batch
-        # TODO: consider Softmax on dim 0 for queries in the same video
-
-
         cost_sim = -outputs
 
         # Final cost matrix
