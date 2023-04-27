@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 
 # Hungarian Algorithm for bipartite-graph matching
-# modified from DETR.
+# modified from DETR: https://arxiv.org/abs/2010.04159
 class HungarianMatcher(nn.Module):
     """This class computes an assignment between the query and the video moments.
     
