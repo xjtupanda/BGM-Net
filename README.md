@@ -1,8 +1,6 @@
 # BGM-Net
-PyTorch implementation for the paper "Bipartite Graph Matching Network for Partially Relevant Video Retrieval" under review.
-
-> The code is modified from [ms-sl
-](https://github.com/HuiGuanLab/ms-sl).
+PyTorch implementation for the paper "Bipartite Graph Matching Network for Partially Relevant Video Retrieval", under review in ACM MultiMedia 2023.
+![model_overview](./assets/arch.png)
 
 Full code will be available after review. The core of the Bipartite Graph Matching Module (BGMM) is [here](./gadgets/match.py).
 ## Results
