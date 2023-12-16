@@ -9,8 +9,8 @@ We compare our method against others on three benchmark datasets, i.e., TVR, Act
 |              | R@1  | R@5  | R@10 | R@100 | SumR  |
 |--------------|------|------|------|-------|-------|
 | TVR          | 14.1 | 34.7 | 45.9 | 85.2  | 179.9 |
-| Activitynet  | 7.3  | 23.7 | 35.8 | 76.7  | 143.6 |
-| Charades-STA | 2.1  | 7.2  | 11.8 | 48.1  | 69.5  |
+| Activitynet  | 7.2  | 23.8 | 36.0 | 76.9  | 143.9 |
+| Charades-STA | 1.9  | 7.4  | 12.2 | 50.1  | 71.6  |
 
 ## Environments
 
