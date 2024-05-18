@@ -18,6 +18,10 @@ GPU: NVIDIA GeForce RTX 3090 Ti
 ## Getting started
 1. Clone this repository
 
+```shell
+$ git clone git@github.com:xjtupanda/BGM-Net.git
+$ cd BGM-Net
+```
 2. Prepare environment
 
 ```shell
