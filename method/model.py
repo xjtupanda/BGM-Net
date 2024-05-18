@@ -130,18 +130,18 @@ class BGM_Net(nn.Module):
         frame_trip_loss = self.get_frame_trip_loss(frame_scale_scores)
 
         # add alignment loss to align v_clip and v_frame, note different scale of losses.
-        #clip_align_loss = torch.nn.functional.l1_loss(q2q_score, clip_v2v_score)
+        clip_align_loss = torch.nn.functional.l1_loss(q2q_score, clip_v2v_score)
         #frame_align_loss = torch.nn.functional.l1_loss(q2q_score, frame_v2v_score)
         
-        loss = clip_nce_loss + frame_nce_loss + clip_trip_loss + frame_trip_loss #+ \
-               #clip_align_loss#+ frame_align_loss
+        loss = clip_nce_loss + frame_nce_loss + clip_trip_loss + frame_trip_loss + \
+               clip_align_loss#+ frame_align_loss
         #loss = clip_trip_loss + frame_trip_loss
         #loss = clip_nce_loss  + frame_nce_loss + clip_align_loss
         
         return loss, {"loss_overall": float(loss), 'clip_nce_loss': clip_nce_loss,
                       'clip_trip_loss': clip_trip_loss, 'frame_trip_loss': frame_trip_loss,
-                      'frame_nce_loss': frame_nce_loss, }
-                      #'clip_align_loss': clip_align_loss}#, 'frame_align_loss': frame_align_loss}
+                      'frame_nce_loss': frame_nce_loss, 
+                      'clip_align_loss': clip_align_loss}#, 'frame_align_loss': frame_align_loss}
 
 
 
