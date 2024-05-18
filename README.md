@@ -1,16 +1,7 @@
 # BGM-Net
-PyTorch implementation for the paper "Bipartite Graph Matching Network for Partially Relevant Video Retrieval", under review in ACM MultiMedia 2023.
+PyTorch implementation for the paper "Exploiting Instance-level Relationships in Weakly Supervised Text-to-Video Retrieval", accepted by ACM TOMM 2024 [[Link]](https://dl.acm.org/doi/abs/10.1145/3663571).
 ![model_overview](./assets/arch.png)
 
-Full code will be available after review. The core of the Bipartite Graph Matching Module (BGMM) is [here](./gadgets/match.py).
-## Results
-We compare our method against others on three benchmark datasets, i.e., TVR, Activitynet and Charades-STA:
-
-|              | R@1  | R@5  | R@10 | R@100 | SumR  |
-|--------------|------|------|------|-------|-------|
-| TVR          | 14.1 | 34.7 | 45.9 | 85.2  | 179.9 |
-| Activitynet  | 7.3  | 23.7 | 35.8 | 76.7  | 143.6 |
-| Charades-STA | 2.1  | 7.2  | 11.8 | 48.1  | 69.2  |
 
 ## Environments
 
@@ -55,6 +46,7 @@ Set `device_ids` in the script to assign which GPU to use.
 Check `method/config.py` for all more description of parameters.
 The best checkpoint and the log should be saved in `ROOTPATH/DATASET_NAME/results`.
 
+
 ***
 To reproduce the results using pre-trained checkpoints, please download [here](https://pan.baidu.com/s/1JJhkXX2Zi9e9KkThxYK_AA?pwd=b6di).
 
@@ -62,4 +54,3 @@ Extract and put the model file in the right place, set `MODEL_DIR` in `do_test.s
 ```
 $ bash do_test.sh
 ```
-

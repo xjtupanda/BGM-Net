@@ -1,8 +1,13 @@
 # misc
+*.csv
+*.jsonl
+*.ipynb
+clean_data.py
 data/
+.vscode/
+new_caps/
+caps_bkup/
 tmp_bak/
-method/
-utils/
 *__pycache__*
 
 # Byte-compiled / optimized / DLL files
